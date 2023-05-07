@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ExpensesTracker</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Expense Calculator</h2>
+        <nav class="navigation">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="input-section">
+          <h2 class="eTitle">Enter Amount That You Want to Manage</h2>
+          <form>
+            <div class="input-item">
+              <label for="amount">Amount:</label>
+              <input type="number" id="amount">
+            </div>
+            <div class="input-item">
+              <label for="roomrent">Room Rent (%):</label>
+              <input type="number" id="roomrent">
+            </div>
+            <div class="input-item">
+              <label for="accessories">Accessories (%):</label>
+              <input type="number" id="accessories">
+            </div>
+            <div class="input-item">
+              <label for="emergency">Emergency (%):</label>
+              <input type="number" id="emergency">
+            </div>
+            <div class="input-item">
+              <label for="saving">Saving (%):</label>
+              <input type="number" id="saving">
+            </div>
+            <button id="evaluate-button">Evaluate</button>
+          </form>
+        </div>
+        <div class="result-section">
+          <h2 class="rResults">Results</h2>
+          <p id="result-text">Please enter your inputs and click the "Evaluate" button.</p>
+        </div>
+      </div>
+      
+          </div>
+        </div>
+    </div>
+      
+
+
+    <div class="notification">
+        <p>Welcome back, visitor! 🙌</p>
+        <span class="notification_progress"></span>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

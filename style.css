@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(45deg, #0a0a0a, #303b4b);
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2em;
+    background-image: linear-gradient(
+        to right, #2a2438, #352f44, #5c5470, #dbd8e3);   
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;   
+    background-position: -100%;
+    animation: animatedText 1s infinite alternate-reverse;
+}
+@keyframes animatedText {
+    from{
+        background-position: 0%;
+    }
+    to{
+        background-position: 100%;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.navigation a {
+    /*color of the text*/
+    position: relative;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+    margin-left: 40px;
+    transition: 0.5s ease;
+}
+
+.navigation:hover a{
+    color: #575757;
+}
+
+.navigation:hover a:hover {
+    color: #5cdb95;
+    box-shadow: 0 2px 0 0 currentColor;
+}
+
+.notification {
+    pointer-events: none;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: max-content;
+    padding: 20px 15px;
+    border-radius: 4px;
+    background-color: #141619;
+    color: #f6f5f9;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: fade-in 4s linear forwards;
+}
+
+.notification_progress {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: calc(100% - 10px);
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    background-image: linear-gradient(
+        to right, #539bdb, #3250bf
+    );
+    animation: load 3s 0.25s linear forwards;
+}
+
+@keyframes fade-in {
+    5% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+
+}
+
+@keyframes load {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+    
+.input-section {
+    padding: 10px;
+    position: relative;
+    width: 700px;
+    height: 650px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-radius: 40px;
+}
+
+.input-item {
+    position: relative;
+    bottom: -20px;
+    right: -10px;
+    margin-top: 18px;
+    width: 97%;
+    font-size: 13px;
+}
+
+
+.eTitle{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 30px;
+}
+
+.result-section {
+    position: relative;
+    left: 100px;
+    width: 500px;
+    height: 550px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin-left: 30px;
+}
+    
+.form-label {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+    
+.form-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+    
+.form-input:focus {
+    border-color: #5cdb95;
+}
+    
+button {
+    display: block;
+    padding: 10px 20px;
+    align-items: right;
+    margin-top: 20px;
+    background-color: #263ec5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+    
+button:hover {
+    background-color: #1c32c2;
+}
+
+.result-text {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.result-text {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+}
+    
+
+.input-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+    
+.input-item input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+    
+.input-item input:focus {
+    border-color: #5cdb95;
+}
+    
+.expenses {
+    width: 100%;
+    margin-top: 20px;
+}
+    
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+    
+.expense-item label {
+    margin-right: 10px;
+    font-size: 16px;
+}
+    
+.expense-item input {
+    width: 60px;
+    font-size: 16px;
+    text-align: right;
+}
+
+.result-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0px;
+    background-color: #fff;
+}
+
+.input-item:last-child {
+    margin-bottom: 0;
+}
+
+.input-item label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.2em;
+}
+
+.input-item input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+#evaluate-button {
+    position: relative;
+    bottom: -30px;
+    right: -10px;
+    display: block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #2840c9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+#evaluate-button:hover {
+    background-color: #303f9f;
+}
