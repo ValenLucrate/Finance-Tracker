@@ -1,6 +1,8 @@
 # Finance Tracker
 
 This is a simple finance tracker app that you can use to manage your budget. It was created using HTML, CSS, and JavaScript.
+![image](https://github.com/ValenLucrate/Finance-Tracker/assets/130077739/dc00d334-d927-46b6-926a-e2296654dd14)
+
 
 ## Features
 
