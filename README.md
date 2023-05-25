@@ -33,5 +33,4 @@ If you want to modify or improve the finance tracker app, here are the steps to 
 5. Commit your changes and push them to your remote repository.
 
 ## Credits
-
-This
+MIT Licensed
