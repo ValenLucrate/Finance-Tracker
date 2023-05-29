@@ -35,4 +35,4 @@ If you want to modify or improve the finance tracker app, here are the steps to 
 ## Credits
 MIT Licensed
 
-########################
+#########################
